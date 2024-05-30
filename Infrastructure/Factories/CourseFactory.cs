@@ -6,8 +6,6 @@ namespace Infrastructure.Factories;
 
 public static class CourseFactory
 {
-
-
 	public static CourseEntity Create(CourseCreateRequest request)
 	{
 		return new CourseEntity
@@ -32,6 +30,7 @@ public static class CourseFactory
 				AuthorImageUrl = author.AuthorImageUrl,
 				Subscribers = author.Subscribers,
 				Followers = author.Followers
+
 			}).ToList(),
 			Prices = request.Prices == null ? null : new PriceEntity
 			{
@@ -48,6 +47,7 @@ public static class CourseFactory
 					Id = detail.Id,
 					Title = detail.Title,
 					Description = detail.Description
+
 				}).ToList()
 			},
 			CategoryEntity = request.CategoryEntity == null ? null : new CategoryEntity
@@ -58,7 +58,7 @@ public static class CourseFactory
 		};
 	}
 
-	public static CourseEntity Update(CourseUpdateRequest request)
+	public static CourseEntity Create(CourseUpdateRequest request)
 	{
 		return new CourseEntity
 		{
@@ -83,6 +83,7 @@ public static class CourseFactory
 				AuthorImageUrl = author.AuthorImageUrl,
 				Subscribers = author.Subscribers,
 				Followers = author.Followers
+
 			}).ToList(),
 			Prices = request.Prices == null ? null : new PriceEntity
 			{
@@ -99,6 +100,7 @@ public static class CourseFactory
 					Id = detail.Id,
 					Title = detail.Title,
 					Description = detail.Description
+
 				}).ToList()
 			},
 			CategoryEntity = request.CategoryEntity == null ? null : new CategoryEntity
@@ -134,6 +136,7 @@ public static class CourseFactory
 				AuthorImageUrl = author.AuthorImageUrl,
 				Subscribers = author.Subscribers,
 				Followers = author.Followers
+
 			}).ToList(),
 			Prices = entity.Prices == null ? null : new Prices
 			{
@@ -150,6 +153,7 @@ public static class CourseFactory
 					Id = detail.Id,
 					Title = detail.Title,
 					Description = detail.Description
+
 				}).ToList()
 			},
 			CategoryEntity = entity.CategoryEntity == null ? null : new Category
@@ -159,7 +163,6 @@ public static class CourseFactory
 			}
 		};
 	}
-
 
 }
 

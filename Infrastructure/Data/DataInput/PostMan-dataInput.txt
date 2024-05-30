@@ -1,0 +1,921 @@
+{
+  "query": "mutation ($input: CourseCreateRequestInput!) { createCourse(input: $input) { id title } }",
+  "variables": {
+    "input": {
+      "imageUrl": "https://example.com/jmeter_performance_testing.svg",
+      "imageHeaderUrl": "https://example.com/jmeter_performance_testing_header.jpg",
+      "isDigital": true,
+      "isBestseller": false,
+      "categories": ["Technology", "Software Testing", "Performance Testing"],
+      "title": "Learn JMeter from Scratch on Live Apps: Performance Testing",
+      "ingress": "Master full-stack web development. Learn HTML, CSS, JavaScript, Node.js, and build real projects.",
+      "starRating": 0,
+      "reviews": "0",
+      "likes": "3100",
+      "likePercentage": "0.92",
+      "hours": "160",
+      "authors": [
+        {
+          "id": 1,
+          "authorName": "Jenny Wilson",
+          "authorDescription": "Jenny Wilson is a skilled software engineer with expertise in performance testing and quality assurance. With years of experience in the industry, she has worked on numerous projects involving performance testing of web applications, APIs, and microservices. Jenny is passionate about teaching and sharing her knowledge with others. She believes that performance testing is a crucial aspect of software development and aims to help developers and testers improve the performance and reliability of their applications.",
+          "authorImageUrl": "https://example.com/authors/jennywilson.jpg",
+          "subscribers": 0,
+          "followers": 0
+        }
+      ],
+      "prices": {
+        "currency": "USD",
+        "price": 14.50,
+        "discount": 0
+      },
+      "content": {
+        "description": "Master the art of performance testing with JMeter in this comprehensive course. Whether you're a beginner or an experienced tester, this course will teach you everything you need to know to conduct effective performance tests on live applications. From setting up test plans to analyzing test results, you'll learn how to use JMeter's powerful features and capabilities to identify performance bottlenecks and optimize the performance of your applications. With hands-on exercises and real-world examples, you'll gain the skills and confidence to tackle performance testing challenges in your projects.",
+        "includes": [
+          "Over 100 video lectures covering essential JMeter techniques and workflows for performance testing",
+          "Hands-on exercises and real-world examples to reinforce learning and build practical skills",
+          "Quizzes and assessments to test your understanding of key concepts",
+          "Access to downloadable resources and sample test plans",
+          "Certificate of completion upon finishing the course"
+        ],
+        "programDetails": [
+          {
+            "id": 1,
+            "title": "Introduction to Performance Testing",
+            "description": "Overview of performance testing concepts, setting up JMeter environment, and understanding basic JMeter features."
+          },
+          {
+            "id": 2,
+            "title": "Getting Started with JMeter",
+            "description": "Learn how to install and configure JMeter for performance testing, and explore its user interface and components."
+          },
+          {
+            "id": 3,
+            "title": "Creating Test Plans",
+            "description": "Understand the process of creating test plans in JMeter, including configuring thread groups, samplers, and listeners."
+          },
+          {
+            "id": 4,
+            "title": "Executing Tests",
+            "description": "Learn how to execute performance tests using JMeter, and explore advanced features such as assertions, timers, and controllers."
+          },
+          {
+            "id": 5,
+            "title": "Test Analysis and Reporting",
+            "description": "Gain insights into performance test analysis and reporting, and learn how to interpret test results effectively."
+          },
+          {
+            "id": 6,
+            "title": "Real-world Applications",
+            "description": "Apply your skills to real-world applications and conduct performance tests on live applications to identify performance bottlenecks and optimize application performance."
+          }
+        ]
+      },
+      "categoryEntity": {
+        "id": 1,
+        "name": "Web Development"
+      }
+    }
+  }
+}
+
+
+
+{
+  "query": "mutation ($input: CourseCreateRequestInput!) { createCourse(input: $input) { id title } }",
+  "variables": {
+    "input": {
+      "imageUrl": "https://example.com/ui_ux_design.svg",
+      "imageHeaderUrl": "https://example.com/ui_ux_design_header.jpg",
+      "isDigital": true,
+      "isBestseller": false,
+      "categories": ["Technology", "Game Development", "Unity"],
+      "title": "The Ultimate Guide to 2D Mobile Game Development with Unity",
+      "ingress": "Master full-stack web development. Learn HTML, CSS, JavaScript, Node.js, and build real projects.",
+      "starRating": 0,
+      "reviews": "0",
+      "likes": "2700",
+      "likePercentage": "0.98",
+      "hours": "100",
+      "authors": [
+        {
+          "id": 1,
+          "authorName": "Albert Flores",
+          "authorDescription": "Albert Flores is a seasoned game developer and Unity expert with a passion for creating engaging and immersive experiences. With years of experience in the industry, he has worked on numerous successful game projects across various platforms. Albert is known for his practical approach to game development and his ability to explain complex concepts in a clear and accessible manner. Through his courses and tutorials, Albert aims to empower aspiring game developers to bring their ideas to life and succeed in the competitive world of game development.",
+          "authorImageUrl": "https://example.com/authors/albertflores.jpg",
+          "subscribers": 0,
+          "followers": 0
+        }
+      ],
+      "prices": {
+        "currency": "USD",
+        "price": 12.99,
+        "discount": 44.99
+      },
+      "content": {
+        "description": "Unlock the secrets of 2D mobile game development with Unity, the world's leading game development platform. In this comprehensive course, you'll learn how to create your own 2D mobile games from scratch using Unity's powerful tools and features. Whether you're a beginner or an experienced developer, this course will take you step-by-step through the process of building fun and addictive games for iOS and Android devices. With hands-on projects and real-world examples, you'll gain the skills and confidence to turn your game ideas into reality.",
+        "includes": [
+          "Over 80 video lectures covering essential Unity techniques and workflows for 2D game development",
+          "Hands-on projects and exercises to reinforce learning and build practical skills",
+          "Quizzes and assessments to test your understanding of key concepts",
+          "Access to downloadable resources and project files",
+          "Certificate of completion upon finishing the course"
+        ],
+        "programDetails": [
+          {
+            "id": 1,
+            "title": "Introduction to Unity",
+            "description": "Overview of Unity's interface and tools, setting up the workspace, and understanding basic game development concepts."
+          },
+          {
+            "id": 2,
+            "title": "Game Design Principles",
+            "description": "Learn the principles of game design and discover how to create engaging gameplay experiences for players."
+          },
+          {
+            "id": 3,
+            "title": "2D Physics and Interactions",
+            "description": "Master Unity's 2D physics system and learn how to create realistic interactions between game objects."
+          },
+          {
+            "id": 4,
+            "title": "UI Design and Optimization",
+            "description": "Explore UI design principles and learn how to optimize your game for mobile devices."
+          },
+          {
+            "id": 5,
+            "title": "Monetization Strategies",
+            "description": "Discover monetization strategies for mobile games, including ads, in-app purchases, and premium pricing models."
+          },
+          {
+            "id": 6,
+            "title": "Portfolio Development",
+            "description": "Build a portfolio of 2D mobile games to showcase your skills to potential employers or clients."
+          }
+        ]
+      },
+      "categoryEntity": {
+        "id": 1,
+        "name": "Web Development"
+      }
+    }
+  }
+}
+
+
+
+{
+  "query": "mutation ($input: CourseCreateRequestInput!) { createCourse(input: $input) { id title } }",
+  "variables": {
+    "input": {
+      "imageUrl": "https://example.com/blender_character_creator.svg",
+      "imageHeaderUrl": "https://example.com/blender_character_creator_header.jpg",
+      "isDigital": true,
+      "isBestseller": false,
+      "categories": ["Technology", "Game Development", "3D Modeling"],
+      "title": "Blender Character Creator v2.0 for Video Games Design",
+      "ingress": "Master full-stack web development. Learn HTML, CSS, JavaScript, Node.js, and build real projects.",
+      "starRating": 0,
+      "reviews": "0",
+      "likes": "3100",
+      "likePercentage": "0.92",
+      "hours": "160",
+      "authors": [
+        {
+          "id": 1,
+          "authorName": "Ralph Edwards",
+          "authorDescription": "Ralph Edwards is a skilled 3D artist and game developer with years of experience in the industry. He specializes in character modeling and animation using Blender, a popular open-source 3D modeling software. Ralph is passionate about teaching and has helped many aspiring game developers bring their ideas to life through his tutorials and courses. With a focus on practical techniques and industry best practices, Ralph's courses are designed to equip students with the skills they need to succeed in the world of game development.",
+          "authorImageUrl": "https://example.com/authors/ralphedwards.jpg",
+          "subscribers": 0,
+          "followers": 0
+        }
+      ],
+      "prices": {
+        "currency": "USD",
+        "price": 18.99,
+        "discount": 0
+      },
+      "content": {
+        "description": "Master the art of character creation for video game design using Blender. In this comprehensive course, you'll learn how to create and animate 3D characters from scratch using Blender's powerful tools and features. Whether you're a beginner or an experienced artist, this course will take you step-by-step through the process of modeling, texturing, rigging, and animating characters for use in video games. With hands-on projects and real-world examples, you'll gain the skills and confidence to bring your own game characters to life.",
+        "includes": [
+          "Over 150 video lectures covering essential Blender techniques and workflows",
+          "Hands-on projects and exercises to reinforce learning and build practical skills",
+          "Quizzes and assessments to test your understanding of key concepts",
+          "Access to downloadable resources and project files",
+          "Certificate of completion upon finishing the course"
+        ],
+        "programDetails": [
+          {
+            "id": 1,
+            "title": "Introduction to Blender",
+            "description": "Overview of Blender's interface and tools, setting up the workspace, and understanding basic 3D concepts."
+          },
+          {
+            "id": 2,
+            "title": "Character Modeling",
+            "description": "Learn how to create 3D characters from scratch using Blender's modeling and sculpting tools."
+          },
+          {
+            "id": 3,
+            "title": "Character Rigging",
+            "description": "Understand the process of character rigging and learn how to create custom rigs for animating characters."
+          },
+          {
+            "id": 4,
+            "title": "Character Animation",
+            "description": "Explore the principles of character animation and learn how to animate characters using Blender's animation tools."
+          },
+          {
+            "id": 5,
+            "title": "Advanced Techniques",
+            "description": "Discover advanced techniques such as facial animation, cloth simulation, and character optimization for real-time rendering."
+          },
+          {
+            "id": 6,
+            "title": "Portfolio Development",
+            "description": "Build a portfolio of 3D characters and animations to showcase your skills to potential employers or clients."
+          }
+        ]
+      },
+      "categoryEntity": {
+        "id": 1,
+        "name": "Web Development"
+      }
+    }
+  }
+}
+
+
+
+{
+  "query": "mutation ($input: CourseCreateRequestInput!) { createCourse(input: $input) { id title } }",
+  "variables": {
+    "input": {
+      "imageUrl": "https://example.com/creative_css_design.svg",
+      "imageHeaderUrl": "https://example.com/creative_css_design_header.jpg",
+      "isDigital": true,
+      "isBestseller": false,
+      "categories": ["Technology", "Web Development", "CSS"],
+      "title": "Creative CSS Drawing Course: Make Art With CSS",
+      "ingress": "Master full-stack web development. Learn HTML, CSS, JavaScript, Node.js, and build real projects.",
+      "starRating": 0,
+      "reviews": "0",
+      "likes": "4200",
+      "likePercentage": "0.94",
+      "hours": "220",
+      "authors": [
+        {
+          "id": 1,
+          "authorName": "Robert Fox",
+          "authorDescription": "Robert Fox is a seasoned web developer and creative designer with over a decade of experience in the industry. He specializes in pushing the boundaries of CSS to create stunning visual effects and artworks directly in the browser. Robert is passionate about sharing his knowledge and inspiring others to explore the artistic possibilities of CSS. In addition to his technical expertise, he has a keen eye for design and aesthetics, which he incorporates into his courses to help students create visually appealing and interactive web content.",
+          "authorImageUrl": "https://example.com/authors/robertfox.jpg",
+          "subscribers": 0,
+          "followers": 0
+        }
+      ],
+      "prices": {
+        "currency": "USD",
+        "price": 1050.00,
+        "discount": 0
+      },
+      "content": {
+        "description": "Unleash your creativity with CSS in this unique course that combines coding with art. Whether you're a web developer looking to expand your skills or an artist interested in digital mediums, this course will teach you how to create beautiful and interactive drawings using CSS. From basic shapes to complex animations, you'll learn how to use CSS properties and techniques to bring your ideas to life in the browser. With step-by-step tutorials and hands-on projects, you'll gain the confidence and skills to create your own CSS masterpieces.",
+        "includes": [
+          "Over 200 video lectures covering essential CSS drawing topics",
+          "Hands-on projects and challenges to reinforce learning and build practical skills",
+          "Quizzes and assessments to test your understanding of key concepts",
+          "Access to downloadable resources and starter code",
+          "Certificate of completion upon finishing the course"
+        ],
+        "programDetails": [
+          {
+            "id": 1,
+            "title": "Introduction to CSS Drawing",
+            "description": "Overview of CSS drawing techniques, setting up development environment, and understanding basic CSS concepts."
+          },
+          {
+            "id": 2,
+            "title": "Creating Basic Shapes",
+            "description": "Learn how to create basic geometric shapes and patterns using CSS properties such as border-radius, gradients, and transformations."
+          },
+          {
+            "id": 3,
+            "title": "Advanced CSS Techniques",
+            "description": "Explore advanced CSS techniques for creating complex illustrations, animations, and interactive effects."
+          },
+          {
+            "id": 4,
+            "title": "Principles of CSS Artistry",
+            "description": "Understand the principles of CSS artistry, including composition, color theory, and visual hierarchy, and how they apply to web design."
+          },
+          {
+            "id": 5,
+            "title": "Creative Coding Tools",
+            "description": "Discover creative coding tools and resources for experimenting with CSS and pushing the boundaries of web design."
+          },
+          {
+            "id": 6,
+            "title": "Hands-on Projects",
+            "description": "Apply your skills to hands-on projects and challenges, and create your own CSS artworks and interactive designs."
+          }
+        ]
+      },
+      "categoryEntity": {
+        "id": 1,
+        "name": "Web Development"
+      }
+    }
+  }
+}
+
+
+
+
+{
+  "query": "mutation ($input: CourseCreateRequestInput!) { createCourse(input: $input) { id title } }",
+  "variables": {
+    "input": {
+      "imageUrl": "https://example.com/data_science.svg",
+      "imageHeaderUrl": "https://example.com/data_science_header.jpg",
+      "isDigital": true,
+      "isBestseller": true,
+      "categories": ["Technology", "Data Science", "Machine Learning", "Python"],
+      "title": "Data Science & Machine Learning with Python",
+      "ingress": "Master full-stack web development. Learn HTML, CSS, JavaScript, Node.js, and build real projects.",
+      "starRating": 0,
+      "reviews": "0",
+      "likes": "3100",
+      "likePercentage": "0.92",
+      "hours": "160",
+      "authors": [
+        {
+          "id": 1,
+          "authorName": "Esther Howard",
+          "authorDescription": "Esther Howard is a data scientist with a strong background in mathematics and computer science. She has extensive experience in machine learning, data analysis, and statistical modeling. Esther is passionate about teaching and sharing her knowledge with others. She believes in making complex concepts accessible to everyone and enjoys helping students build practical skills in data science and machine learning. In her free time, Esther enjoys hiking, reading, and experimenting with new data science techniques.",
+          "authorImageUrl": "https://example.com/authors/estherhoward.jpg",
+          "subscribers": 0,
+          "followers": 0
+        }
+      ],
+      "prices": {
+        "currency": "USD",
+        "price": 11.20,
+        "discount": 0
+      },
+      "content": {
+        "description": "Dive into the fascinating world of data science and machine learning with Python. In this comprehensive course, you'll learn how to analyze large datasets, build predictive models, and extract valuable insights from data. Whether you're a beginner or an experienced programmer, this course will equip you with the skills and knowledge needed to succeed in the field of data science. From data preprocessing to model evaluation, you'll explore every step of the data science pipeline and gain hands-on experience with real-world datasets.",
+        "includes": [
+          "Over 120 video lectures covering essential data science and machine learning topics",
+          "Hands-on projects and exercises to reinforce learning and build practical skills",
+          "Quizzes and assessments to test your understanding of key concepts",
+          "Access to downloadable datasets and code resources",
+          "Certificate of completion upon finishing the course"
+        ],
+        "programDetails": [
+          {
+            "id": 1,
+            "title": "Introduction to Data Science",
+            "description": "Overview of data science and machine learning, setting up Python environment, and understanding basic data science concepts."
+          },
+          {
+            "id": 2,
+            "title": "Python for Data Science",
+            "description": "Learn the basics of Python programming language and explore its applications in data science and machine learning."
+          },
+          {
+            "id": 3,
+            "title": "Data Manipulation and Visualization",
+            "description": "Explore data manipulation and visualization techniques using popular Python libraries such as NumPy, Pandas, and Matplotlib."
+          },
+          {
+            "id": 4,
+            "title": "Machine Learning Fundamentals",
+            "description": "Understand essential machine learning concepts and algorithms, including linear regression, classification, and clustering."
+          },
+          {
+            "id": 5,
+            "title": "Advanced Machine Learning Techniques",
+            "description": "Explore advanced machine learning techniques such as ensemble methods, dimensionality reduction, and neural networks."
+          },
+          {
+            "id": 6,
+            "title": "Real-world Projects",
+            "description": "Apply your skills to real-world data science projects and case studies, and gain practical experience in solving complex problems."
+          }
+        ]
+      },
+      "categoryEntity": {
+        "id": 1,
+        "name": "Web Development"
+      }
+    }
+  }
+}
+
+
+
+
+
+{
+  "query": "mutation ($input: CourseCreateRequestInput!) { createCourse(input: $input) { id title } }",
+  "variables": {
+    "input": {
+      "imageUrl": "https://example.com/ios_swift_dev.svg",
+      "imageHeaderUrl": "https://example.com/ios_swift_dev_header.jpg",
+      "isDigital": true,
+      "isBestseller": false,
+      "categories": ["Technology", "Programming", "Mobile Development", "iOS"],
+      "title": "iOS 8: Swift - The Complete iOS App Development Course",
+      "ingress": "Master full-stack web development. Learn HTML, CSS, JavaScript, Node.js, and build real projects.",
+      "starRating": 0,
+      "reviews": "0",
+      "likes": "3100",
+      "likePercentage": "0.92",
+      "hours": "160",
+      "authors": [
+        {
+          "id": 1,
+          "authorName": "Marvin McKinney",
+          "authorDescription": "Marvin McKinney is a seasoned iOS developer with a passion for teaching and sharing his knowledge with others. With extensive experience in Swift and iOS app development, he has created numerous successful apps that are widely used by millions of users worldwide. Marvin is known for his clear and concise teaching style, making complex concepts easy to understand for students of all levels. He is dedicated to helping aspiring developers build their own iOS apps and achieve their goals in the app development industry.",
+          "authorImageUrl": "https://example.com/authors/marvinmckinney.jpg",
+          "subscribers": 0,
+          "followers": 0
+        }
+      ],
+      "prices": {
+        "currency": "USD",
+        "price": 15.99,
+        "discount": 0
+      },
+      "content": {
+        "description": "Become a proficient iOS app developer with this comprehensive course on Swift programming and iOS app development. Whether you're a beginner or an experienced developer looking to enhance your skills, this course will guide you through the entire process of building iOS apps from scratch. From basic Swift syntax to advanced iOS frameworks, you'll learn everything you need to know to create your own apps and publish them on the App Store.",
+        "includes": [
+          "Over 100 video lectures covering essential iOS development topics",
+          "Hands-on projects to reinforce learning and build real-world apps",
+          "Code exercises and quizzes to test your understanding",
+          "Access to downloadable resources and starter projects",
+          "Certificate of completion upon finishing the course"
+        ],
+        "programDetails": [
+          {
+            "id": 1,
+            "title": "Introduction to iOS App Development",
+            "description": "Overview of iOS development ecosystem, setting up Xcode environment, and understanding basic iOS concepts."
+          },
+          {
+            "id": 2,
+            "title": "Getting Started with Swift",
+            "description": "Learn the basics of Swift programming language, including variables, constants, and control flow."
+          },
+          {
+            "id": 3,
+            "title": "Building User Interfaces",
+            "description": "Explore Interface Builder and UIKit framework to design and layout user interfaces for iOS apps."
+          },
+          {
+            "id": 4,
+            "title": "Working with Data",
+            "description": "Understand how to work with data in iOS apps, including networking, data persistence, and Core Data framework."
+          },
+          {
+            "id": 5,
+            "title": "Advanced iOS Features",
+            "description": "Learn advanced iOS features such as push notifications, background tasks, and integrating with external services."
+          },
+          {
+            "id": 6,
+            "title": "Testing and Deployment",
+            "description": "Explore testing strategies for iOS apps and learn how to deploy your apps to the App Store."
+          }
+        ]
+      },
+      "categoryEntity": {
+        "id": 1,
+        "name": "Web Development"
+      }
+    }
+  }
+}
+
+
+
+
+{
+  "query": "mutation ($input: CourseCreateRequestInput!) { createCourse(input: $input) { id title } }",
+  "variables": {
+    "input": {
+      "imageUrl": "https://example.com/course/image.jpg",
+      "imageHeaderUrl": "https://example.com/course/header.jpg",
+      "isDigital": true,
+      "isBestseller": false,
+      "categories": ["Technology", "Mobile Development", "iOS Development"],
+      "title": "iOS 8: Swift - The Complete iOS App Development Course",
+      "ingress": "Become a proficient iOS app developer with this comprehensive course on Swift programming and iOS app development.",
+      "likes": "3100",
+      "likePercentage": "92%",
+      "hours": "160",
+      "authors": [
+        {
+          "id": 1,
+          "authorName": "Marvin McKinney",
+          "authorDescription": "Marvin McKinney is a seasoned iOS developer with a passion for teaching and sharing his knowledge with others. With extensive experience in Swift and iOS app development, he has created numerous successful apps that are widely used by millions of users worldwide. Marvin is known for his clear and concise teaching style, making complex concepts easy to understand for students of all levels. He is dedicated to helping aspiring developers build their own iOS apps and achieve their goals in the app development industry.",
+          "authorImageUrl": "https://example.com/authors/marvinmckinney.jpg",
+          "subscribers": null,
+          "followers": null
+        }
+      ],
+      "prices": {
+        "currency": "USD",
+        "price": 15.99,
+        "discount": 0
+      },
+      "content": {
+        "description": "Become a proficient iOS app developer with this comprehensive course on Swift programming and iOS app development. Whether you're a beginner or an experienced developer looking to enhance your skills, this course will guide you through the entire process of building iOS apps from scratch. From basic Swift syntax to advanced iOS frameworks, you'll learn everything you need to know to create your own apps and publish them on the App Store.",
+        "includes": [
+          "Over 100 video lectures covering essential iOS development topics",
+          "Hands-on projects to reinforce learning and build real-world apps",
+          "Code exercises and quizzes to test your understanding",
+          "Access to downloadable resources and starter projects",
+          "Certificate of completion upon finishing the course"
+        ],
+        "programDetails": [
+          {
+            "id": 1,
+            "title": "Introduction to iOS App Development",
+            "description": "Overview of iOS development ecosystem, setting up Xcode environment, and understanding basic iOS concepts."
+          },
+          {
+            "id": 2,
+            "title": "Getting Started with Swift",
+            "description": "Learn the basics of Swift programming language, including variables, constants, and control flow."
+          },
+          {
+            "id": 3,
+            "title": "Building User Interfaces",
+            "description": "Explore Interface Builder and UIKit framework to design and layout user interfaces for iOS apps."
+          },
+          {
+            "id": 4,
+            "title": "Working with Data",
+            "description": "Understand how to work with data in iOS apps, including networking, data persistence, and Core Data framework."
+          },
+          {
+            "id": 5,
+            "title": "Advanced iOS Features",
+            "description": "Learn advanced iOS features such as push notifications, background tasks, and integrating with external services."
+          },
+          {
+            "id": 6,
+            "title": "Testing and Deployment",
+            "description": "Explore testing strategies for iOS apps and learn how to deploy your apps to the App Store."
+          }
+        ]
+      },
+      "categoryEntity": {
+        "id": 1,
+        "name": "Mobile Development"
+      }
+    }
+  }
+}
+
+
+
+{
+  "query": "mutation ($input: CourseCreateRequestInput!) { createCourse(input: $input) { id title } }",
+  "variables": {
+    "input": {
+      "imageUrl": "front_end_dev.svg",
+      "imageHeaderUrl": "",
+      "isDigital": true,
+      "isBestseller": false,
+      "categories": ["Technology", "Programming", "Web Development"],
+      "title": "The Complete Front-End Web Development Course",
+      "ingress": "Master full-stack web development. Learn HTML, CSS, JavaScript, Node.js, and build real projects.",
+      "starRating": 0,
+      "reviews": "2700",
+      "likes": "3100",
+      "likePercentage": "98%",
+      "hours": "100",
+      "authors": [
+        {
+          "id": 0,
+          "authorName": "Albert Flores",
+          "authorDescription": "Albert Flores is a dedicated front-end developer with a passion for creating beautiful and interactive user interfaces. With years of experience in the industry, he has worked on a variety of projects ranging from small business websites to large-scale web applications. Albert is committed to staying updated with the latest front-end technologies and best practices, ensuring that his courses provide students with valuable and relevant skills. Outside of coding, he enjoys hiking, playing the piano, and exploring new coffee shops.",
+          "authorImageUrl": "",
+          "subscribers": 0,
+          "followers": 0
+        }
+      ],
+      "prices": {
+        "currency": "USD",
+        "price": 44.99,
+        "discount": 9.99
+      },
+      "content": {
+        "description": "Dive into the world of front-end web development with this comprehensive course. Whether you're a beginner or an experienced developer looking to enhance your skills, this course has something for everyone. From HTML and CSS basics to advanced JavaScript concepts, you'll learn everything you need to know to build modern and responsive websites. With hands-on projects and real-world examples, you'll gain practical experience that you can apply to your own projects.",
+        "includes": [
+          "Over 80 lectures covering essential front-end topics",
+          "Hands-on projects to reinforce learning and build real-world skills",
+          "Quizzes and coding exercises to test your understanding",
+          "Access to downloadable resources and code samples",
+          "Certificate of completion upon finishing the course"
+        ],
+        "programDetails": [
+          {
+            "id": 1,
+            "title": "Introduction to Front-End Development",
+            "description": "Overview of front-end technologies, setting up development environment, and understanding the role of a front-end developer."
+          },
+          {
+            "id": 2,
+            "title": "HTML5 and Semantic Markup",
+            "description": "Learn the latest features of HTML5 and understand how to use semantic elements to structure web pages."
+          },
+          {
+            "id": 3,
+            "title": "Mastering CSS",
+            "description": "Explore advanced CSS techniques for layout, styling, and animation, including flexbox, grid layout, and CSS preprocessors."
+          },
+          {
+            "id": 4,
+            "title": "JavaScript Fundamentals",
+            "description": "Get a deep understanding of JavaScript fundamentals such as variables, data types, functions, and control flow."
+          },
+          {
+            "id": 5,
+            "title": "DOM Manipulation and Event Handling",
+            "description": "Learn how to manipulate the Document Object Model (DOM) and handle events to create dynamic and interactive web pages."
+          },
+          {
+            "id": 6,
+            "title": "Responsive Web Design",
+            "description": "Understand the principles of responsive web design and learn how to create layouts that adapt to different screen sizes and devices."
+          }
+        ]
+      },
+      "categoryEntity": {
+        "id": 1,
+        "name": "Web Development"
+      }
+    }
+  }
+}
+
+
+
+
+{
+  "query": "mutation ($input: CourseCreateRequestInput!) { createCourse(input: $input) { id title } }",
+  "variables": {
+    "input": {
+      "imageUrl": "",
+      "imageHeaderUrl": "",
+      "isDigital": true,
+      "isBestseller": false,
+      "categories": [],
+      "title": "The Complete Front-End Web Development Course",
+      "ingress": "Master full-stack web development. Learn HTML, CSS, JavaScript, Node.js, and build real projects.",
+      "starRating": 0,
+      "reviews": "",
+      "likes": "",
+      "likePercentage": "",
+      "hours": "100",
+      "authors": [
+        {
+          "id": 0,
+          "authorName": "Albert Flores",
+          "authorDescription": "Albert Flores is a dedicated front-end developer with a passion for creating beautiful and interactive user interfaces. With years of experience in the industry, he has worked on a variety of projects ranging from small business websites to large-scale web applications. Albert is committed to staying updated with the latest front-end technologies and best practices, ensuring that his courses provide students with valuable and relevant skills. Outside of coding, he enjoys hiking, playing the piano, and exploring new coffee shops.",
+          "authorImageUrl": "",
+          "subscribers": 0,
+          "followers": 0
+        }
+      ],
+      "prices": {
+        "currency": "USD",
+        "price": 44.99,
+        "discount": 9.99
+      },
+      "content": {
+        "description": "Dive into the world of front-end web development with this comprehensive course. Whether you're a beginner or an experienced developer looking to enhance your skills, this course has something for everyone. From HTML and CSS basics to advanced JavaScript concepts, you'll learn everything you need to know to build modern and responsive websites. With hands-on projects and real-world examples, you'll gain practical experience that you can apply to your own projects.",
+        "includes": [
+          "Over 80 lectures covering essential front-end topics",
+          "Hands-on projects to reinforce learning and build real-world skills",
+          "Quizzes and coding exercises to test your understanding",
+          "Access to downloadable resources and code samples",
+          "Certificate of completion upon finishing the course"
+        ],
+        "programDetails": [
+          {
+            "id": 1,
+            "title": "Introduction to Front-End Development",
+            "description": "Overview of front-end technologies, setting up development environment, and understanding the role of a front-end developer."
+          },
+          {
+            "id": 2,
+            "title": "HTML5 and Semantic Markup",
+            "description": "Learn the latest features of HTML5 and understand how to use semantic elements to structure web pages."
+          },
+          {
+            "id": 3,
+            "title": "Mastering CSS",
+            "description": "Explore advanced CSS techniques for layout, styling, and animation, including flexbox, grid layout, and CSS preprocessors."
+          },
+          {
+            "id": 4,
+            "title": "JavaScript Fundamentals",
+            "description": "Get a deep understanding of JavaScript fundamentals such as variables, data types, functions, and control flow."
+          },
+          {
+            "id": 5,
+            "title": "DOM Manipulation and Event Handling",
+            "description": "Learn how to manipulate the Document Object Model (DOM) and handle events to create dynamic and interactive web pages."
+          },
+          {
+            "id": 6,
+            "title": "Responsive Web Design",
+            "description": "Understand the principles of responsive web design and learn how to create layouts that adapt to different screen sizes and devices."
+          }
+        ]
+      },
+      "categoryEntity": {
+        "id": 0,
+        "name": ""
+      }
+    }
+  }
+}
+
+
+
+
+{
+  "query": "mutation ($input: CourseCreateRequestInput!) { createCourse(input: $input) { id title } }",
+  "variables": {
+    "input": {
+      "imageUrl": "https://example.com/html_css_js/image.jpg",
+      "imageHeaderUrl": "https://example.com/html_css_js/header.jpg",
+      "isDigital": true,
+      "isBestseller": false,
+      "categories": ["Technology", "Programming", "Web Development"],
+      "title": "HTML, CSS, JavaScript Web Developer",
+      "ingress": "Master full-stack web development. Learn HTML, CSS, JavaScript, Node.js, and build real projects.",
+      "starRating": 0,
+      "reviews": "0",
+      "likes": "3100",
+      "likePercentage": "92%",
+      "hours": "160",
+      "authors": [
+        {
+          "id": 1,
+          "authorName": "Jenny Wilson",
+          "authorDescription": "Jenny Wilson is a proficient web developer specializing in front-end technologies. With years of experience in HTML, CSS, and JavaScript, she has crafted numerous interactive and visually appealing web applications. Jenny has a knack for simplifying complex concepts and enjoys sharing her knowledge with aspiring developers. In her spare time, she contributes to open-source projects and enjoys photography.",
+          "authorImageUrl": "https://example.com/authors/jennywilson.jpg",
+          "subscribers": 0,
+          "followers": 0
+        }
+      ],
+      "prices": {
+        "currency": "USD",
+        "price": 15.99,
+        "discount": 0
+      },
+      "content": {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et urna et dui lobortis vestibulum. Nam nec orci at ex mattis bibendum in a velit. Duis id ante quis nisl blandit gravida ac nec lorem. Proin vitae lacus vitae lorem tincidunt viverra. Integer commodo elit in enim interdum tempor. Sed vitae ligula vitae orci ullamcorper suscipit in sit amet nunc. In hac habitasse platea dictumst.",
+        "includes": [
+          "100+ hours of on-demand video lectures",
+          "20 hands-on projects to reinforce learning",
+          "Access to downloadable code resources and exercises",
+          "Quizzes and assessments to track progress",
+          "Certificate of completion upon finishing the course"
+        ],
+        "programDetails": [
+          {
+            "id": 1,
+            "title": "Introduction to Web Development",
+            "description": "Overview of web development, setting up development environment, and understanding basic web technologies."
+          },
+          {
+            "id": 2,
+            "title": "HTML Fundamentals",
+            "description": "Learn the building blocks of web pages, including HTML tags, elements, attributes, and document structure."
+          },
+          {
+            "id": 3,
+            "title": "Styling with CSS",
+            "description": "Explore the world of CSS, including selectors, properties, and advanced layout techniques."
+          },
+          {
+            "id": 4,
+            "title": "JavaScript Essentials",
+            "description": "Master the fundamentals of JavaScript programming, including variables, data types, functions, and control flow."
+          },
+          {
+            "id": 5,
+            "title": "DOM Manipulation",
+            "description": "Understand how to interact with the Document Object Model (DOM) to dynamically update web pages."
+          },
+          {
+            "id": 6,
+            "title": "Building Responsive Websites",
+            "description": "Learn techniques for creating responsive web designs that adapt to different screen sizes and devices."
+          }
+        ]
+      },
+      "categoryEntity": {
+        "id": 1,
+        "name": "Web Development"
+      }
+    }
+  }
+}
+
+
+
+{
+  "query": "mutation ($input: CourseCreateRequestInput!) { createCourse(input: $input) { id title } }",
+  "variables": {
+    "input": {
+      "imageUrl": "https://example.com/course/image.jpg",
+      "imageHeaderUrl": "https://example.com/course/header.jpg",
+      "isDigital": true,
+      "isBestseller": true,
+      "categories": ["Technology", "Programming", "Web Development"],
+      "title": "Complete Web Development Course",
+      "ingress": "Learn how to build web applications from scratch.",
+      "starRating": 4.5,
+      "reviews": "2500",
+      "likes": "5000",
+      "likePercentage": "95%",
+      "hours": "120",
+      "authors": [
+        {
+          "id": 1,
+          "authorName": "John Doe",
+          "authorDescription": "Expert web developer with 10 years of experience.",
+          "authorImageUrl": "https://example.com/authors/johndoe.jpg",
+          "subscribers": 10000,
+          "followers": 5000
+        },
+        {
+          "id": 2,
+          "authorName": "Jane Smith",
+          "authorDescription": "Front-end developer and UI/UX designer.",
+          "authorImageUrl": "https://example.com/authors/janesmith.jpg",
+          "subscribers": 8000,
+          "followers": 4000
+        }
+      ],
+      "prices": {
+        "currency": "USD",
+        "price": 99.99,
+        "discount": 20.0
+      },
+      "content": {
+        "description": "This course covers all aspects of web development from front-end to back-end.",
+        "includes": [
+          "120 hours on-demand video",
+          "30 articles",
+          "40 downloadable resources",
+          "Full lifetime access",
+          "Certificate of completion"
+        ],
+        "programDetails": [
+          {
+            "id": 1,
+            "title": "Introduction to Web Development",
+            "description": "Overview of web development and its importance."
+          },
+          {
+            "id": 2,
+            "title": "HTML Basics",
+            "description": "Learn the basics of HTML and build your first web page."
+          },
+          {
+            "id": 3,
+            "title": "CSS for Beginners",
+            "description": "Introduction to CSS and how to style web pages."
+          },
+          {
+            "id": 4,
+            "title": "JavaScript Essentials",
+            "description": "Learn the fundamentals of JavaScript programming."
+          },
+          {
+            "id": 5,
+            "title": "Backend Development with Node.js",
+            "description": "Introduction to server-side programming with Node.js."
+          }
+        ]
+      },
+      "categoryEntity": {
+        "id": 1,
+        "name": "Web Development"
+      }
+    }
+  }
+}
+
+
+
+

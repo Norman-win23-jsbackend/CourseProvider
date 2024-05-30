@@ -3,13 +3,9 @@ using Infrastructure.Services;
 
 namespace Infrastructure.GraphQL.Mutations;
 
-
-
 public class CourseMutation(ICourseService courseService)
 {
 	private readonly ICourseService _courseService = courseService;
-
-
 
 
 	[GraphQLName("createCourse")]
@@ -19,14 +15,11 @@ public class CourseMutation(ICourseService courseService)
 	}
 
 
-
 	[GraphQLName("updateCourse")]
 	public async Task<Course> UpdateCourseAsync(CourseUpdateRequest input)
 	{
 		return await _courseService.UpdateCourseAsync(input);
 	}
-
-
 
 
 	[GraphQLName("deleteCourse")]

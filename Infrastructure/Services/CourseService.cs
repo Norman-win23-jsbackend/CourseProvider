@@ -6,26 +6,20 @@ using System.Diagnostics;
 
 namespace Infrastructure.Services;
 
+//CRUD Operations
 public interface ICourseService
 {
-
 	Task<Course> CreateCourseAsync(CourseCreateRequest request);
-	Task<Course> GetCourseByIDAsync(string id);
+	Task<Course> GetCourseByIdAsync(string id);
 	Task<IEnumerable<Course>> GetCoursesAsync();
 	Task<Course> UpdateCourseAsync(CourseUpdateRequest request);
 	Task<bool> DeleteCourseAsync(string id);
 }
 
 
-
-
-
 public class CourseService(IDbContextFactory<DataContext> contextFactory) : ICourseService
 {
 	private readonly IDbContextFactory<DataContext> _contextFactory = contextFactory;
-
-
-
 
 	public async Task<Course> CreateCourseAsync(CourseCreateRequest request)
 	{
@@ -51,7 +45,7 @@ public class CourseService(IDbContextFactory<DataContext> contextFactory) : ICou
 			await using var context = _contextFactory.CreateDbContext();
 			var courseEntity = await context.Courses.FirstOrDefaultAsync(c => c.Id == id);
 			if (courseEntity == null) 
-				return false;
+	    	return false;
 
 			context.Courses.Remove(courseEntity);
 			await context.SaveChangesAsync();
@@ -65,12 +59,12 @@ public class CourseService(IDbContextFactory<DataContext> contextFactory) : ICou
         }
 	}
 
-    public async Task<Course> GetCourseByIDAsync(string id)
+    public async Task<Course> GetCourseByIdAsync(string id)
     {
         try
         {
-            await using var dbContext = _contextFactory.CreateDbContext();
-            var courseEntity = await dbContext.Courses.FirstOrDefaultAsync(c => c.Id == id);
+            await using var context = _contextFactory.CreateDbContext();
+            var courseEntity = await context.Courses.FirstOrDefaultAsync(c => c.Id == id);
             return courseEntity == null ? null! : CourseFactory.Create(courseEntity);
         }
         catch (Exception ex)
@@ -80,14 +74,13 @@ public class CourseService(IDbContextFactory<DataContext> contextFactory) : ICou
         }
     }
 
-
     public async Task<IEnumerable<Course>> GetCoursesAsync()
 	{
 		try
 		{
 			await using var context = _contextFactory.CreateDbContext();
 			var courseEntities = await context.Courses.ToListAsync();
-			return courseEntities == null ? null! : courseEntities.Select( CourseFactory.Create);
+			return courseEntities.Select(CourseFactory.Create);
 		}
         catch (Exception ex)
         {
@@ -104,9 +97,10 @@ public class CourseService(IDbContextFactory<DataContext> contextFactory) : ICou
 			var existingCourse = await context.Courses.FirstOrDefaultAsync(c => c.Id == request.Id);
 			if (existingCourse == null) return null!;
 
-			var updateCourseEntity = CourseFactory.Update(request);
+			var updateCourseEntity = CourseFactory.Create(request);
 			updateCourseEntity.Id = existingCourse.Id;
 			context.Entry(existingCourse).CurrentValues.SetValues(updateCourseEntity);
+
 			await context.SaveChangesAsync();
 			return CourseFactory.Create(existingCourse);
 		}
@@ -116,7 +110,5 @@ public class CourseService(IDbContextFactory<DataContext> contextFactory) : ICou
             return null!;
         }
     }
-
-
 
 }

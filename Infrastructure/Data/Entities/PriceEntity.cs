@@ -9,5 +9,4 @@ public partial class CourseEntity
 		public decimal Discount { get; set; }
 
 	}
-
 }

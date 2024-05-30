@@ -15,24 +15,27 @@ var host = new HostBuilder()
 		services.AddApplicationInsightsTelemetryWorkerService();
 		services.ConfigureFunctionsApplicationInsights();
 
-		services.AddPooledDbContextFactory<DataContext>(x =>
-		{
-			x.UseCosmos(Environment.GetEnvironmentVariable("Cosmos_Uri")!, Environment.GetEnvironmentVariable("Cosmos_DbName")!)
-			.UseLazyLoadingProxies();
-		});
-		
-		services.AddScoped<ICourseService, CourseService>();
+			
+        services.AddPooledDbContextFactory<DataContext>(x =>
+        {
+            x.UseCosmos(Environment.GetEnvironmentVariable("COSMOS_URI")!, Environment.GetEnvironmentVariable("COSMOS_DBNAME")!)
+             .UseLazyLoadingProxies();
+        });
+
+        services.AddScoped<ICourseService, CourseService>();
 
 		services.AddGraphQLFunction()
-		.AddQueryType<CourseQuery>()
-		.AddMutationType<CourseMutation>()
-		.AddType<CourseType>();
-		
-		var sp = services.BuildServiceProvider();
+				.AddQueryType<CourseQuery>()
+				.AddMutationType<CourseMutation>()
+				.AddType<CourseType>();
+
+        //SP meaning Service-Provider
+        var sp = services.BuildServiceProvider();
 		using var scope = sp.CreateScope();
 		var dbContextFactory = scope.ServiceProvider.GetRequiredService<IDbContextFactory<DataContext>>();
 		using var context = dbContextFactory.CreateDbContext();
 		context.Database.EnsureCreated();
+
 	})
 	.Build();
 

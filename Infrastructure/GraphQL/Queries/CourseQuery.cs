@@ -8,8 +8,6 @@ public class CourseQuery(ICourseService courseService)
     private readonly ICourseService _courseService = courseService;
 
 
-
-
     [GraphQLName("getCourses")]
     public async Task<IEnumerable<Course>> GetCoursesAsync()
     {
@@ -17,12 +15,10 @@ public class CourseQuery(ICourseService courseService)
     }
 
 
-
-
-
     [GraphQLName("getCourseById")]
-    public async Task<Course> GetCourseAsync(string id)
+    public async Task<Course> GetCourseByIdAsync(string id)
     {
-        return await _courseService.GetCourseByIDAsync(id);
+        return await _courseService.GetCourseByIdAsync(id);
     }
+
 }

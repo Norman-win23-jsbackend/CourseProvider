@@ -12,5 +12,4 @@ public partial class CourseEntity
 		public int Followers { get; set; }
 
 	}
-
 }
